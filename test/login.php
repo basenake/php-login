@@ -1,5 +1,6 @@
 <?php
 include_once('comn.php');
+$here='front';
 ?>
 
 <!DOCTYPE html>
@@ -9,8 +10,9 @@ include_once('comn.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
+    <a rel="stylesheet" href="./style.css">
     <style>
-form > div{
+    form > div{
         border: 1px solid lightblue;
         box-shadow: 0 0 10px solid lightblue;
         width: 500px;
@@ -42,9 +44,8 @@ form > div{
     </style>
 </head>
 <body>
-    <?php include_once('header.php');?>
+    <?php include('header.php');?>
     <?php
-    session_start();
     if(isset($_SESSION['login'])){
         echo "登入成功";
         echo "歡迎";

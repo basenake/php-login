@@ -1,5 +1,7 @@
 <?php
 include_once('comn.php');
+$here='member';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +17,7 @@ include_once('comn.php');
 </head>
 <body>
 <?php
-include_once('comn.php');
+include('header.php');
 ?>
 </body>
 </html>
