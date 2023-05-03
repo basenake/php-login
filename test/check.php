@@ -13,7 +13,7 @@ if($_POST['acc']==$acc && $_POST['pw']==$pw){
     header("location:member_center.php");
 
 }else{
-    echo "帳號 或密碼錯誤";
+    // echo "帳號 或密碼錯誤";
     $_SESSION['error']="帳號 或密碼錯誤";
     if(isset($_SESSION['login'])){
         unset($_SESSION['login']);
