@@ -38,9 +38,33 @@ form > div{
     </style>
 </head>
 <body>
+    <?php
+    session_start();
+    if(isset($_SESSION['login'])){
+        echo "登入成功";
+        echo "歡迎";
+        echo $_SESSION['login']; 
+        echo "<a href='logout.php'>登出</a> ";
+    }else{
+        
+
+    }
+    
+    
+    ?>
 <h1>會員登入</h1>
 <form action="check.php" method="post">
 <div>
+    <div style='color:red'>
+        <?php
+if(isset($_SESSION['error'])){
+    echo "帳號或密碼錯誤";
+}else{
+
+}
+
+?>
+    </div>
     <div class="input">
         <label for="">帳號</label><input type="text" name="acc" id="acc">
     </div>
