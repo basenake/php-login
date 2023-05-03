@@ -1,3 +1,7 @@
+<?php
+include_once('comn.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +42,7 @@ form > div{
     </style>
 </head>
 <body>
+    <?php include_once('header.php');?>
     <?php
     session_start();
     if(isset($_SESSION['login'])){
@@ -47,10 +52,7 @@ form > div{
         echo "<a href='logout.php'>登出</a> ";
     }else{
         
-
     }
-    
-    
     ?>
 <h1>會員登入</h1>
 <form action="check.php" method="post">
@@ -60,7 +62,6 @@ form > div{
 if(isset($_SESSION['error'])){
     echo "帳號或密碼錯誤";
 }else{
-
 }
 
 ?>

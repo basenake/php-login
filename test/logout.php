@@ -1,6 +1,6 @@
 <?php
+include_once('comn.php');
 
-session_start();
 // echo "以登出使用者" .$_SESSION['name'];
 
 // unset($_SESSION['name']);
