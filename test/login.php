@@ -1,6 +1,7 @@
 <?php
 include_once('comn.php');
 $here='front';
+// 如果有分類 須加上 路徑../ 出去外層及 連接外層的資料
 ?>
 
 <!DOCTYPE html>
