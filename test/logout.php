@@ -6,7 +6,7 @@ session_start();
 // unset($_SESSION['name']);
 unset($_SESSION['error']);
 unset($_SESSION['logout']);
-
+header("location:login.php");
 
 
 
