@@ -1,5 +1,6 @@
 <?php
 include_once('comn.php');
+
 $acc='admin';
 $pw='1234';
 
@@ -19,16 +20,6 @@ if($_POST['acc']==$acc && $_POST['pw']==$pw){
     header("location:login.php");
 }
 
-
 }
-
-
-
-
-
-
-
-
-
 
 ?>

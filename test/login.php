@@ -10,7 +10,7 @@ $here='front';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
-    <a rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
     form > div{
         border: 1px solid lightblue;
@@ -44,7 +44,7 @@ $here='front';
     </style>
 </head>
 <body>
-    <?php include('header.php');?>
+    <?php include("header.php");?>
     <?php
     if(isset($_SESSION['login'])){
         echo "登入成功";
@@ -57,24 +57,27 @@ $here='front';
     ?>
 <h1>會員登入</h1>
 <form action="check.php" method="post">
-<div>
-    <div style='color:red'>
-        <?php
-if(isset($_SESSION['error'])){
-    echo "帳號或密碼錯誤";
-}else{
-}
-
-?>
+    <div>
+        <div style='color:red'>
+            <?php
+                if(isset($_SESSION['error'])){
+                    echo "帳號或密碼錯誤";
+                }else{
+                }
+            ?>
+        </div>
+        <div class="input">
+            <label for="">帳號</label>
+            <input type="text" name="acc" id="acc">
+        </div>
+        <div class="input">
+            <label for="">密碼</label>
+            <input type="text" name="pw" id="pw">
+        </div>
+        <div>
+            <input type="submit" value="登入">
+        </div>
     </div>
-    <div class="input">
-        <label for="">帳號</label><input type="text" name="acc" id="acc">
-    </div>
-    <div class="input">
-        <label for="">密碼</label><input type="text" name="pw" id="pw">
-    </div>
-    <div><input type="submit" value="登入"></div>
-</div>
 </form>
 </body>
 </html>

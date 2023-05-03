@@ -1,24 +1,24 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: lavenderblush;
 }
 header{
     display: flex;
     color: wheat;
     justify-content: space-around;
-    padding: 0;
+    padding: 5px 0;
     background-color: bisque;
     
 }
 header ul{
     display: flex;
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     
 }
 ul li{
+    /* width:33% */
     margin: 0 15px;
     width: fit-content;
 }
